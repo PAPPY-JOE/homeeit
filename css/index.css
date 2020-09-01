@@ -10,7 +10,6 @@ body,html{
 	overflow-x: hidden;
 	scroll-behavior: smooth;
 	background-color: #060f29;
-
 }
 
 a{
@@ -30,7 +29,8 @@ li{
 	background-color: #060f29;
 	color: white;
 	padding: 10px 25px;
-	position: relative;
+	position: fixed;
+	z-index: 50000;
 	font-family: 'Roboto', sans-serif;
 }
 
@@ -78,6 +78,7 @@ li{
 .nav-block a{
 	color: white;
 	overflow: hidden;
+	transition: .4s all ease;
 }
 
 .nav-block .active{
@@ -123,9 +124,9 @@ li{
 	top: 0;
 	position: fixed;
 	height: 100vh;
-	z-index: 10000;
+	z-index: 1000000;
 	padding: 10px 0;
-	background: #060f29;
+	background: #010207;
 	font-family: "Roboto", sans-serif;
 	width: 80px;
 	overflow: hidden;
@@ -196,12 +197,12 @@ li{
 
 /* Main */
 main{
-	top: 0;
+	top: 30px;
 	height: auto;
 	width: 100vw;
 	padding: 0;
 	margin: 0;
-	background: cornflowerblue;
+	position: relative;
 }
 
 main #img1{
@@ -242,34 +243,34 @@ main #img2{
 	margin: 0;
 	color: orange;
 	z-index: 500;
+	cursor: pointer;
 }
 
 
+/* Slide */
 .slide{
 	top: 100%;
 	z-index: 50;
-	width: 550px;
 	overflow: hidden;
 	padding: 80px 0 20px 50px;
 	margin-right: 50px;
 	margin-bottom: 50px;
-	
+	width: 700px;
+
 }
-
-
-/* Test slide */
- .slide img{ border-radius: 5px; width:550px; height: 500px; }
  
+ .slide img{ border-radius: 5px; width: 700px; height: 500px; }
+
 
 .landing-block{
 	width: 100vw;
 	height: auto;
-	padding: 80px 0;
+	padding: 100px 15px;
 	display: flex;
 	flex-flow: row wrap;
 	justify-content: center;
 	align-items: center;
-	position: absolute;
+	position: relative;
 	overflow-x: hidden;
 }
 
@@ -277,17 +278,248 @@ main #img2{
 	display: grid;
 	grid-template-columns: 30% 30% 30%;
 	grid-template-rows: 30% 30% 30%;
-	position: relative;
 	z-index: 10;
 	align-content: center;
 	justify-content: center;
 }
 
 .gallery li{
-	margin: 8%;
+	overflow: hidden;
+	margin: 3%;
+	border-radius: 5px;
 }
-.gallery li img{ border-radius: 5px;  max-width: 200px; max-height: 150px; }
+.gallery li img{ border-radius: 5px;  max-width: 200px; max-height: 150px;}
 
+/* Awards */
+
+.award{
+	color: white;
+	width: 100vw;
+	display: flex;
+	flex-flow: column;
+	align-items: center;
+	justify-content: center;
+	padding: 15px 0 30px 0;
+	font-family: 'Open Sans', sans-serif;
+}
+
+.award-section{
+	display: flex;
+	flex-flow: row wrap;
+	align-items: flex-start;
+	justify-content: center;
+	width: 100%;
+}
+
+.award-name{
+	flex-basis: 45%;
+	font-size: 30px;
+	padding: 10px 20px 10px 10px;
+}
+
+.award-name p:nth-child(1){
+	font-size: 50px;
+	font-weight: bold;
+
+}
+.award-name p:nth-child(2){
+	font-size: 22px;
+	margin: 15px 0;
+}
+
+.price{
+	flex-basis: 30%;
+	height: 100%;
+	font-size: 50px;
+	font-weight: bold;
+	line-height: 70px;
+	padding: 15px;
+	text-align: center;
+}
+
+/* Horizontal details */
+.award-info{
+	width: 100vw;
+	display: flex;
+	flex-flow: row wrap;
+	align-content: center;
+	justify-content: center;
+	padding: 15px 0 30px 0;
+}
+
+.award-info div{
+	width: 250px;
+	display: flex;
+	flex-flow: column;
+	align-content: center;
+	justify-content: center;
+	text-align: center;
+	margin: 25px;
+}
+
+.award-info div i{
+	height: 1px;
+	background: gray;
+	width: 100%;
+	display: block;
+}
+
+.award-info div p:nth-child(2){
+	font-size: 20px;
+	margin: 50px 0 20px 0;
+}
+
+.award-info div p:nth-child(3){
+	font-size: 40px;
+	margin: 20px 0 50px 0;
+}
+
+/* Services */
+
+.services{
+    background-color: white;
+    font-family: 'Open Sans', sans-serif;
+	padding: 50px 0 100px 0;
+	position: relative;
+	background-image: linear-gradient(rgba(255, 255, 255, 0.85),rgba(255, 255, 255, 0.85)), url(../images/houston.png);
+	background-position: center;
+	background-size: cover;
+	background-repeat: no-repeat;
+}
+
+.services-text p:nth-child(1) ion-icon{
+	color: red;
+}
+.services-text p:nth-child(1){
+    font-weight: bold;
+    color: #0a33ac;
+    font-size: 30px;
+    overflow: visible;
+
+}
+
+.services-text p:nth-child(2){
+    font-weight: bold;
+    color: #060f29;
+    font-size: 15px;
+	overflow: visible;
+	line-height: 35px;
+
+}
+
+.services-text p:nth-child(3) a:hover{
+	text-decoration: underline;
+}
+
+.services-text p:nth-child(3) a{
+	color: #0a33ac;
+    font-weight: 700;
+}
+
+.services-text{
+    max-width: 500px;
+    min-width: 250px;
+    margin: 50px 10%;
+}
+
+.box{
+    min-width: 300px;
+    min-height: 300px;
+    height: 380px;
+    background-repeat: no-repeat;
+	box-shadow: 5px 5px 15px 4px rgba(0, 0, 0, 0.5);
+	background-position: center;
+	background-size: cover;
+	background-repeat: no-repeat;
+    margin: 20px;
+    border-radius: 5px;
+    background-color: #262525;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+	flex-flow: column;
+	text-align: center;
+
+}
+
+.box-1{background-image: linear-gradient(rgba(0, 0, 0, 0.8),rgba(0, 0, 0, 0.8)), url(../images/brainstorming_.png);}
+.box-2{background-image: linear-gradient(rgba(0, 0, 0, 0.8),rgba(0, 0, 0, 0.8)), url(../images/real_estate_agent.png);}
+.box-3{background-image: linear-gradient(rgba(0, 0, 0, 0.8),rgba(0, 0, 0, 0.8)), url(../images/money_jar.png);}
+
+.box:hover{
+	box-shadow: none;
+	top: -5px;
+}
+
+.box-container{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.box-1 span,
+.box-2 span,
+.box-3 span{
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: bold;
+}
+
+.box .heading{
+    color: white;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 23px;
+	margin-bottom: 15px;
+
+}
+
+
+.box p:nth-child(3){
+    text-align: center;
+    width: 230px;
+	margin: 0 0 20px 0;
+	font-size: 16px;
+    color: white;
+}
+
+.box i{
+    font-style: normal;
+    display: none;
+    color: white;
+}
+
+
+.box p i a:hover{
+	color: white;
+	text-decoration: underline;
+}
+
+.box p i a{
+	margin-top: 3px;
+	transition: .3s ease;
+	color: red;
+	font-weight: bold
+}
+
+.box button{
+    width: 100px;
+    height: 30px;
+    background: white;
+    border: none;
+    outline: none;
+    border-radius: 5px;
+    font-family: 'Oswald', sans-serif;
+	margin-top: 5px;
+	cursor: pointer;
+}
 
 
 
@@ -299,7 +531,6 @@ main #img2{
 		width: 600px;
 		padding: 0;
 	}
-	/* .gallery li img{ border-radius: 5px; width:200px; height: 150px; } */
 
 }
 
@@ -360,16 +591,34 @@ main #img2{
 .landing-block{
 	width: 100vw;
 	height: auto;
-	padding: 80px 0;
+	padding: 0 0 50px 0;
 	display: flex;
 	flex-flow: column;
 	justify-content: center;
 	align-items: center;
-	position: absolute;
 	overflow-x: hidden;
 }
 
+/* Award */
+.award-name p:nth-child(1){
+	font-size: 28px;
+	font-weight: bold;
 
+}
+.award-name p:nth-child(2){
+	font-size: 18px;
+	margin: 15px 0;
+}
+
+.price{
+	flex-basis: 30%;
+	height: 100%;
+	font-size: 38px;
+	font-weight: bold;
+	line-height: 70px;
+	padding: 15px;
+	text-align: center;
+}
 }
 
 
@@ -390,10 +639,9 @@ main #img2{
 	}
 
 	.logo h1{
-		margin-top: 35px;
 		line-height: 20px;
 		font-size: 22px;
-		margin: auto 0;
+		margin: 10px 20px;
 	}
 	.logo h1 small{
 		font-size: 12px;
@@ -413,55 +661,6 @@ main #img2{
 .slide{
 	top: 100%;
 	z-index: 50;
-	width: 350px;
-	overflow: hidden;
-	padding: 80px 0 20px 50px;
-	margin-right: 50px;
-	margin-bottom: 50px;
-	
-}
-
-
-/* Test slide */
- .slide img{ border-radius: 5px; width:350px; height: 250px; }
- 
-
-.landing-block{
-	width: 100vw;
-	height: auto;
-	padding: 20px 0;
-	display: flex;
-	flex-flow: column;
-	justify-content: center;
-	align-items: center;
-	position: absolute;
-}
-
-.gallery{
-	display: grid;
-	grid-template-columns: 30% 30% 30%;
-	grid-template-rows: 30% 30% 30%;
-	position: relative;
-	z-index: 10;
-	margin: auto 50px;
-	padding: auto 5%;
-}
-
-.gallery li{
-	margin: 8px 10px;
-}
-.gallery li img{ border-radius: 5px; 
-	 width: 100px; 
-	 }
-
-}
-
-@media only screen and (max-width: 305px){
-
-
-.slide{
-	top: 100%;
-	z-index: 50;
 	width: 90vw;
 	overflow: hidden;
 	padding: 80px 0 20px 50px;
@@ -472,8 +671,39 @@ main #img2{
 
 
 /* Test slide */
- .slide img{ border-radius: 5px; width:90vw;}
+ .slide img{ border-radius: 5px; width:90vw; height: 350px; }
  
+
+.landing-block{
+	width: 100vw;
+	height: auto;
+	padding: 20px 0 60px 0;
+	display: flex;
+	flex-flow: column;
+	justify-content: center;
+	align-items: center;
+}
+
+.gallery{
+	display: grid;
+	grid-template-columns: 30% 30% 30%;
+	grid-template-rows: 30% 30% 30%;
+	position: relative;
+	z-index: 10;
+	margin: auto 50px;
+	padding: 0;
+	width: 80vw;
+}
+
+.gallery li img{ border-radius: 5px; 
+	 width: 100%; 
+	 }
+
+}
+
+@media only screen and (max-width: 305px){
+
+
 
 .landing-block{
 	width: 100vw;
@@ -483,7 +713,6 @@ main #img2{
 	flex-flow: column;
 	justify-content: center;
 	align-items: center;
-	position: absolute;
 }
 
 .gallery{
@@ -494,12 +723,5 @@ main #img2{
 	z-index: 10;
 	margin: auto 50px;
 }
-
-.gallery li{
-	margin: 8px 10px;
-}
-.gallery li img{ border-radius: 5px; 
-	 width: 80px; 
-	 }
 
 }

@@ -7,6 +7,7 @@
     <link rel="shortcut icon" href="images/real_estate_agent.png" type="image/x-icon">
     <!-- Styling -->
     <link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" href="css/header-footer.css">
     <!-- Light slider -->
     <link rel="stylesheet" href="css/lightslider.css">
     <!-- Google fonts -->
@@ -29,13 +30,13 @@
             <ul>
                 <li><a href="" class="active">Home <i></i></a></li>
                 <li><a href="">About <i></i></a></li>
-                <li><a href="">Contact <i></i></a></li>
-                <li><a href="">Purchase <i></i></a></li>
+                <li><a href="">Rent<i></i></a></li>
+                <li><a href="">Buy<i></i></a></li>
                 <li><a href="">Sell <i></i></a></li>
             </ul>
         </div>
         <div class="menu-bar">
-            <ion-icon name="grid-outline"></ion-icon>
+            <ion-icon name="menu-outline"></ion-icon>
         </div>
     </div>
 
@@ -48,8 +49,8 @@
         <ul id="toggleMenu-ul">
             <li><a href="" class="active"><ion-icon name="home-outline"></ion-icon><span>Home</span></a></li>
             <li><a href=""><ion-icon name="alert-circle-outline"></ion-icon><span>About</span></a></li>
-            <li><a href=""><i class="fa fa-address-card-o" aria-hidden="true"></i><span>Contact</span></a></li>
-            <li><a href=""><ion-icon name="wallet-outline"></ion-icon><span>Purchase</span></a></li>
+            <li><a href=""><i class="fa fa-hourglass-start" aria-hidden="true"></i><span>Rent</span></a></li>
+            <li><a href=""><ion-icon name="card-outline"></ion-icon><span>Buy</span></a></li>
             <li><a href=""><ion-icon name="cash-outline"></ion-icon><span>Sell</span></a></li>
         </ul>
     </div>
@@ -78,24 +79,155 @@
                 </ul>
             </div>
             <div class="gallery">
-                    <li class="gallery-li item-a"><img src="images/interior1.jpg"></li>
-                    <li class="gallery-li item-b"><img src="images/interior2.jpg"></li>
-                    <li class="gallery-li item-c"><img src="images/interior3.jpg"></li>
-                    <li class="gallery-li item-d"><img src="images/interior4.jpg"></li>
-                    <li class="gallery-li item-e"><img src="images/interior5.jpg"></li>
-                    <li class="gallery-li item-f"><img src="images/interior6.jpg"></li>
-                    <li class="gallery-li item-g"><img src="images/interior7.jpg"></li>
-                    <li class="gallery-li item-h"><img src="images/interior8.jpg"></li>
-                    <li class="gallery-li item-i"><img src="images/exterior1.jpg"></li>
+                    <li ><img src="images/interior1.jpg"></li>
+                    <li ><img src="images/interior2.jpg"></li>
+                    <li ><img src="images/interior3.jpg"></li>
+                    <li ><img src="images/interior4.jpg"></li>
+                    <li ><img src="images/interior5.jpg"></li>
+                    <li ><img src="images/interior6.jpg"></li>
+                    <li ><img src="images/interior7.jpg"></li>
+                    <li ><img src="images/interior8.jpg"></li>
+                    <li ><img src="images/exterior1.jpg"></li>
             </div>
-                <a href=""><p class="scroll-down"><ion-icon name="arrow-back-outline"></ion-icon> Scroll Down</p></a>
-       </div>
+                <!-- <p class="scroll-down" id="scrollDown"><ion-icon name="arrow-back-outline"></ion-icon> Scroll Down</p> -->
+        </div>
+        <div class="award">
+            <div class="award-section">
+                <div class="award-name">
+                    <p>Award-Winning Modern <br> Mediterranean Style House</p>
+                    <p class="address">Winner: Ms. Praise Fatoye</p>
+                </div>
+                <div class="price">
+                    <p>$700,000</p>
+                </div>
+            </div>
+            <div class="award-info">
+                <div class="a-i-details">
+                    <i></i>
+                    <p>Built Year</p>
+                    <p>2020</p>
+                    <i></i>
+                </div>
+                <div class="a-i-details">
+                    <i></i>
+                    <p>Bedrooms</p>
+                    <p>4</p>
+                    <i></i>
+                </div>
+                <div class="a-i-details">
+                    <i></i>
+                    <p>Bathrooms</p>
+                    <p>5</p>
+                    <i></i>
+                </div>
+                <div class="a-i-details">
+                    <i></i>
+                    <p>Stories</p>
+                    <p>2</p>
+                    <i></i>
+                </div>
+                <div class="a-i-details">
+                    <i></i>
+                    <p>Sq. ft</p>
+                    <p>3250</p>
+                    <i></i>
+                </div>
+            </div>
+        </div>
     </main>
+
+    <!-- Services -->
+    <div id="services" class="services">
+        <!-- Text -->
+        <div class="services-text">
+            <p>COVID <ion-icon name="medkit-outline"></ion-icon></p>
+            <p>Have questions about buying, selling, or renting during COVID-19?</p>
+            <p><a href="plans.html">See Plans</a></p>
+        </div>
+        <!-- Box -->
+        <div class="box-container">
+            <!-- 1 -->
+            <div class="box box-1">
+                <span>1</span>
+                <p class="heading">
+                    Planning your move
+                </p>
+                <p class="details">
+                    Learn about buying, selling, or renting as we adapt to life during COVID-19 <em class="ellipses e-1">...</em> <i id="read-more1">. Whether you have a complete idea of what you want or not, we have got you covered <br><a href="">Learn More</a></i></p>
+                <button id="read-more-btn1">Read More</button>
+            </div>
+            <!-- 2 -->
+            <div id="selling" class="box box-2">
+                <span>2</span>
+                <p class="heading">Selling ? <br> Create a 3D Home tour</p>
+                <p class="details">
+                    Easily create a 3D Home tour and let your home virtually speak for itself <em class="ellipses e-2">...</em><i id="read-more2">. Listings with a 3D Home tour got, averagely, twice the amount of views than listings without. (Yes, really.) <br><a href="">Learn More</a></i></p>
+                <button id="read-more-btn2">Read More</button>
+            </div>
+            <!-- 3 -->
+            <div class="box box-3">
+                <span>3</span>
+                <p class="heading">Managing finances</p>
+                <p class="details">
+                    Resources to help answer your mortgage and personal finance questions <em class="ellipses e-3">...</em> <i id="read-more3">. Visibility of a website to users of a web search engine. Do not worry if all this is latin to you. The point is we will bring your dream website to live! <br><a href="">Learn More</a></i></p>
+                <button id="read-more-btn3">Read More</button>
+            </div>
+        </div>
+        
+    </div>
 
 
 
 
    
+    <!-- Footer -->
+    <footer>
+        <div class="footer">
+            <div class="footer-block">
+
+                <div class="footer-col-2">
+                    <img src="images/real_estate_agent.png" alt="Logo" height="60px">
+                    <p>Be the proud owner of your very own Home</p>
+                </div>
+
+                <div class="footer-col-1">
+                    <h3>Download Our App</h3>
+                    <p>Download App for Android and iOS mobile phone.</p>
+                    <div class="app-logo">
+                        <img src="images/play-store.png">
+                        <img src="images/app-store.png">
+                    </div>
+                </div>
+
+               
+
+                <div class="footer-col-3">
+                    <h3>Useful Links</h3>
+                    <ul>
+                        <li><a href="">Coupons</a></li>
+                        <li><a href="">Blog Post</a></li>
+                        <li><a href="">Privacy & Return Policy</a></li>
+                        <li><a href="">Become an Agent</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-col-4">
+                    <h3>Follow Us</h3>
+                    <ul>
+                        <li><a href="">Facebook</a></li>
+                        <li><a href="">Twitter</a></li>
+                        <li><a href="">Instagram</a></li>
+                        <li><a href="">Youtube</a></li>
+                    </ul>
+                </div>
+            </div>
+           
+        </div>
+       
+        <div class="copyright">
+            Copyright &COPY; 2020 - Homee IT
+        </div>
+    </footer>
      
 
     <!-- Ionicons-->
@@ -114,5 +246,8 @@
 
     <!-- Slide -->
     <script src="scripts/slider.js"></script>
+
+    <!-- Read more -->
+    <script src="scripts/read-more.js"></script>
 </body>
 </html>
