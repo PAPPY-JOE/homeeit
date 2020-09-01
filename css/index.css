@@ -129,8 +129,20 @@ li{
 	background: #010207;
 	font-family: "Roboto", sans-serif;
 	width: 80px;
-	overflow: hidden;
+	overflow-x: hidden;
 }
+
+
+/* Hide scrollbar for Chrome, Safari and Opera */
+.side-bar::-webkit-scrollbar {
+    display: none;
+  }
+  
+  /* Hide scrollbar for IE, Edge and Firefox */
+  .side-bar {
+    -ms-overflow-style: none;  /* IE and Edge */
+    scrollbar-width: none;  /* Firefox */
+  }
 
 .side-bar .top{
 	margin: 0;
