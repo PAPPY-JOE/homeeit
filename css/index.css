@@ -179,10 +179,22 @@ li{
 	position: relative;
 }
 
-.side-bar li:hover a{
+.side-bar li:hover span{
 	background: #0738cc;
 }
 
+ .side-bar span{
+	color: white;
+	display: flex;
+	align-items: center;
+	justify-content: space-around;
+	text-align: center;
+	height: 60px;
+	transition: .5s all ease;
+	border-radius: 5px;
+	min-width: 45px;
+	max-width: 100%;
+}
 .side-bar a{
 	color: white;
 	display: flex;
@@ -194,10 +206,8 @@ li{
 	border-radius: 5px;
 	min-width: 45px;
 	max-width: 100%;
-}
-
-.side-bar a span{
 	display: none;
+
 }
 
 .side-bar a ion-icon, .side-bar a i{
