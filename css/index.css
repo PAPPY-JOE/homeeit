@@ -217,6 +217,270 @@ li{
 	
 }
 
+/* Landing Slide */
+#landing-slide-container{
+	overflow: hidden;
+	width: 100vw;
+	position: relative;
+	height: auto;
+	min-height: 200px;
+    max-height: 700px;
+}
+
+#landing-slide{
+	overflow-y: visible;
+	min-height: 200px;
+	top: 100px;
+	background: burlywood;
+	width: 700vw;
+	padding: 0;
+	margin: 0 0 50px 0;
+	position: relative;
+	overflow: hidden;
+	display: inline-flex;
+	animation: rainbow 50s linear infinite;
+	color: tomato;
+	/* left: -100vw; */
+
+}
+
+@keyframes rainbow{
+    0%{
+		left: 0vw
+
+    }
+    13%{
+		left: 0vw
+
+    }
+    15%{
+		left: -100vw;
+
+	}
+    20%{
+		left: -100vw;
+
+	}
+    27%{
+		left: -100vw;
+
+	}
+    30%{
+		left: -200vw
+
+	}
+    43%{
+		left: -200vw
+
+	}
+    45%{
+		left: -300vw
+
+	}
+    50%{
+		left: -300vw
+
+	}
+
+    57%{
+		left: -300vw
+
+    }
+    60%{
+		left: -400vw
+
+    }
+    73%{
+		left: -400vw
+
+    }
+    75%{
+		left: -500vw
+
+    }
+    80%{
+		left: -500vw
+
+    }
+    87%{
+		left: -500vw
+
+    }
+    90%{
+		left: -600vw
+
+    }
+    100%{
+		left: -600vw
+
+    }
+}
+
+#landing-slide div{
+	display: flex;
+	text-align: center;
+	justify-content: center;
+	align-items: center;
+	width: 100vw;
+	border-radius: 5px;
+    overflow: hidden;
+	overflow: hidden;
+	min-height: 200px;
+    max-height: 700px;
+	background-color: rgba(12, 12, 111, 0.85);
+	position: relative;
+}
+
+#landing-slide div img{
+	opacity: 30%;
+    max-width:  130%;
+}
+
+
+#landing-slide div p{
+	z-index: 2;
+	font-size: 2rem;
+	position: absolute;
+	font-family: 'Oswald', sans-serif;
+	font-weight: bold;
+	letter-spacing: 1.5px;
+
+}
+
+/* slide 1 */
+#landing-slide .l-s-1 p span{
+	color: white;
+	display: block;
+	font-family: 'Open Sans', sans-serif;
+	line-height: 4rem;
+	margin: .5rem 0;
+	text-shadow: 8px 5px 5px black;
+
+}
+#landing-slide .l-s-1 p{
+	color: goldenrod;
+	font-family: 'Inconsolata', sans-serif;
+	text-transform: uppercase;
+	width: 80%;
+	font-size: 4.5rem;
+}
+
+/* slide 2 */
+#landing-slide .l-s-2 {
+	background-color: rgba(57, 55, 1, 0.85);
+
+}
+
+#landing-slide .l-s-2 img{
+	opacity: 40%;
+}
+
+#landing-slide .l-s-2 p span{
+	transform: rotate(-8deg);
+	color: greenyellow;
+	display: inline-block;
+	animation: fun-text2 7s linear infinite;
+
+}
+#landing-slide .l-s-2 p{
+	transform: rotate(5deg);
+	left: 15%;
+	font-size: 5rem;
+	font-weight: 600;
+	font-family: 'Grandstander', sans-serif;
+	color: white;
+	text-transform: uppercase;
+	animation: fun-text 7s linear infinite;
+}
+
+@keyframes fun-text{
+	0%{
+		transform: rotate(5deg);
+	}
+	50%{
+		transform: rotate(-5deg);
+	}
+}
+
+@keyframes fun-text2{
+	0%{
+		transform: rotate(-8deg);
+	}
+	50%{
+		transform: rotate(8deg);
+	}
+}
+
+/* slide 3 */
+#landing-slide .l-s-3{
+	background-color: rgba(1, 25, 35, 0.85);
+}
+#landing-slide .l-s-3 p{
+	text-transform: uppercase;
+	font-family: 'Permanent Marker', sans-serif;
+	text-align: right;
+	top: 20%;
+	right: 15%;
+	font-size: 4rem;
+	color: wheat;
+	letter-spacing: 2.5px;
+	text-shadow: 5px 8px 4px black;
+}
+#landing-slide .l-s-3 p span{
+	display: block;
+	color: yellowgreen;
+	/* color: greenyellow; */
+}
+
+/* slide 4 */
+#landing-slide .l-s-4{
+	background-color: rgba(5, 41, 87, 0.7);
+}
+
+#landing-slide .l-s-4 p{
+	font-family: 'Indie Flower', sans-serif;
+	font-size: 4.5rem;
+	color: blanchedalmond;
+	text-shadow: 3px 7px 4px black;
+
+}
+#landing-slide .l-s-4 span{
+	color: goldenrod;
+}
+
+/* slide 5 */
+#landing-slide .l-s-5{
+	background-color: rgba(31, 1, 35, 0.88);
+
+}
+#landing-slide .l-s-5 p{
+	font-family: 'Long Cang', cursive;
+	font-size: 5.3rem;
+	color: white;
+	text-transform: uppercase;
+	text-shadow: 3px 5px 4px black;
+	top: 15%;
+}
+#landing-slide .l-s-5 span{
+	color: goldenrod;
+}
+
+/* slide 6 */
+#landing-slide .l-s-6{
+	background-color: rgba(1, 35, 3, 0.88);
+}
+#landing-slide .l-s-6 p{
+	font-family: 'Lato', cursive;
+	font-size: 4.5rem;
+	color: white;
+	text-transform: uppercase;
+	text-shadow: 3px 5px 4px black;
+	top: 20%;
+}
+#landing-slide .l-s-6 span{
+	color: darkgoldenrod;
+}
+
 /* Main */
 main{
 	top: 30px;
@@ -563,7 +827,66 @@ main #img2{
 
 
 @media only screen and (max-width: 880px){
+		
+	#landing-slide .l-s-1 p{
+		font-size: 2.5rem;
+	}
+	
+	/* slide 2 */
+	#landing-slide .l-s-2 p span{
+		transform: rotate(-8deg);
+	
+	}
+	#landing-slide .l-s-2 p{
+		transform: rotate(5deg);
+		left: 5%;
+		top: 42%;
+		font-size: 3rem;
+	}
+	
+	/* slide 3 */
+	#landing-slide .l-s-3 p{
+		top: 0;
+		height: 100%;
+		right: 5%;
+		font-size: 2rem;
+		display: flex;
+		flex-flow: column;
+		justify-content: center;
+		align-items: center;
+	}
 
+	/* slide 4 */
+	#landing-slide .l-s-4 p{
+		font-size: 2.5rem;
+	}
+
+	#landing-slide .l-s-4 p span{
+		display: block;
+	}	
+	
+	/* slide 5 */
+	#landing-slide .l-s-5 p span{
+		margin: 15px 0 -10px 0;
+	}
+	#landing-slide .l-s-5 p{
+		font-size: 3.3rem;
+		top: 0;
+		height: 100%;
+		display: flex;
+		flex-flow: column;
+		justify-content: center;
+		align-items: center;
+		line-height: 40px;
+	}
+	
+	/* slide 6 */
+	#landing-slide .l-s-6 p{
+		font-size: 2.5rem;
+		top: 25%;
+	}
+
+	/* Nav block */
 	.nav-block{
 		display: none;
 	} 
@@ -648,6 +971,11 @@ main #img2{
 @media only screen and (max-width: 611px){
 
 
+/* Landing Slide */
+#landing-slide{
+	top: 80px;
+}
+
 	.nav-block{
 		display: none;
 	} 
@@ -723,8 +1051,21 @@ main #img2{
 
 }
 
-@media only screen and (max-width: 305px){
+@media only screen and (max-width: 380px){
+/* slide 6 */
+#landing-slide .l-s-6 p{
+	font-size: 1.5rem;
+	top: 0;
+	height: 100%;
+	display: flex;
+	flex-flow: column;
+	justify-content: center;
+	align-items: center;
+}
 
+}
+
+@media only screen and (max-width: 305px){
 
 
 .landing-block{
