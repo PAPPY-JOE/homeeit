@@ -38,7 +38,7 @@ let FullMenuStatus = false;
 let FullMenu = function () {
     if (FullMenuStatus === false) {
 
-        $('.fixed-side-bar').css('width', '100vw');
+        $('.fixed-side-bar').css('width', '80vw');
         $('.fixed-side-bar').css('transition', '.5s all ease');
         $('.fixed-side-bar .fixed-logo').css('visibility', 'visible');
         $('.fixed-side-bar a').css('display', 'block');
