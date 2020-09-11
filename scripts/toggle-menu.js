@@ -1,7 +1,3 @@
-// $('.side-bar a').click(function(event){
-//     event.preventDefault();
-//   });
-
 // Menu Bar Toggle
 let menuToggleStatus = false;
 

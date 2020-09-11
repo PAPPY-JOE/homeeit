@@ -177,6 +177,7 @@ li{
 	display: block;
 	overflow: hidden;
 	position: relative;
+
 }
 
 .side-bar li:hover span{
@@ -194,6 +195,8 @@ li{
 	border-radius: 5px;
 	min-width: 45px;
 	max-width: 100%;
+	background: #060f29;
+
 }
 .side-bar a{
 	color: white;
